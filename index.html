@@ -24,10 +24,11 @@
 <body>
   <!-- hero section (header,main-content,grid) -->
   <section class="section__hero flex flex__fdc flex__jcc flex__aic">
-    <!-- header -->
+    <!-- header  [START]-->
     <header class="header">
+      <!-- header_inner [START] -->
       <div class="flex flex__aic flex__jcsb inner_div">
-        
+
         <a href="/" class="logo-herf">
           <img id="logo" src="./assets/svg/logo.svg" />
         </a>
@@ -49,7 +50,7 @@
           </li>
           <li class="flex flex__aic">
             <img data-hover="login" data-hover-url="./assets/svg/login-hover.svg" src="./assets/svg/login.svg" />
-            <a href="#">
+            <a href="#early_access">
               sign in
             </a>
           </li>
@@ -62,9 +63,10 @@
         </div>
 
       </div>
-
+      <!-- header_inner [END] -->
     </header>
-    <!-- hero section content -->
+    <!-- header [END] -->
+    <!-- hero section content [START] -->
     <div class="section__hero__content flex flex__fdc flex__aic flex__jcc">
       <img src="./assets/img/illustration-intro.png" />
 
@@ -80,8 +82,9 @@
         get started
       </button>
     </div>
+    <!-- hero section content [END] -->
 
-    <!-- grid containor -->
+    <!-- grid containor features section [START] -->
     <div id="features" class="grid__containor">
       <div class="grid__item flex flex__fdc flex__jcc flex__aic active">
         <img src="./assets/svg/icon-access-anywhere.svg" />
@@ -117,49 +120,199 @@
         </p>
       </div>
     </div>
-
-    <!-- flex img plus content -->
+    <!-- grid containor features section [END] -->
+    <!-- flex img plus content stay productive section [START] -->
     <section class="stay_productive_section ">
       <div class="inner_content flex">
-        <img 
-        src="./assets/svg/productive.svg"
-         />
+        <img src="./assets/svg/productive.svg" />
         <div class="content">
-          <h2>Stay productive,<br/> whereever you are</h2>
+          <h2>Stay productive,<br /> whereever you are</h2>
           <p>
-            Never let location be an issue when accessing your files. Fylo has you covered for all your file storage needs.
+            Never let location be an issue when accessing your files. Fylo has you covered for all your file storage
+            needs.
           </p>
           <p>
-            Securely share files and folders with friends, family and colleagues for live collaboration, Noemail attchments required.
+            Securely share files and folders with friends, family and colleagues for live collaboration, Noemail
+            attchments required.
           </p>
           <a class="flex flex__aic" href="#">
             See how fylo works
-            <img
-            src="./assets/svg/icon-arrow.svg"
-            />
+            <img src="./assets/svg/icon-arrow.svg" />
           </a>
         </div>
       </div>
     </section>
+    <!-- flex img plus content stay productive section [END] -->
+
+    <!-- reviews [START] -->
+    <section class="reviews_section ">
+      <div class="inner_content">
+        <div class="reivew__outer flex flex__fdc flex__jcsb flex__aifs">
+          <p class="review__txt">
+            Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
+            become a well-oiled collaboration machine.
+          </p>
 
 
-      <!-- reviews -->
-     <section class="reviews_section ">
-      <div class="inner_content flex">
-       
+          <div class="review__meta flex flex__aic">
+            <div class="avatar__outer">
+              <img src="./assets/img/profile-1.jpg" />
+            </div>
+            <span>
+              <p class="reviewer__name">
+                satich patel
+              </p>
+              <p class="reviewer__subinfo">
+                Founder & CEO, Haddle
+              </p>
+            </span>
+          </div>
         </div>
+        <div class="reivew__outer flex flex__fdc flex__jcsb flex__aifs">
+          <p class="review__txt">
+            Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
+            become a well-oiled collaboration machine.
+          </p>
+
+
+          <div class="review__meta flex flex__aic">
+            <div class="avatar__outer">
+              <img src="./assets/img/profile-2.jpg" />
+            </div>
+            <span>
+              <p class="reviewer__name">
+                Bruce McKenzle
+              </p>
+              <p class="reviewer__subinfo">
+                Founder & CEO, Haddle
+              </p>
+            </span>
+          </div>
+        </div>
+        <div class="reivew__outer flex flex__fdc flex__jcsb flex__aifs">
+          <p class="review__txt">
+            Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
+            become a well-oiled collaboration machine.
+          </p>
+
+
+          <div class="review__meta flex flex__aic">
+            <div class="avatar__outer">
+              <img src="./assets/img/profile-3.jpg" />
+            </div>
+            <span>
+              <p class="reviewer__name">
+                Iva Boyd
+              </p>
+              <p class="reviewer__subinfo">
+                Founder & CEO, Haddle
+              </p>
+            </span>
+          </div>
+        </div>
+
       </div>
     </section>
+    <!-- reviews [END] -->
+    <!-- Footer [START] -->
+    <footer>
+      <div class="inner__content">
+        <!-- early access containor -->
+        <div id="early_access" class="email__cta__outer flex flex__fdc flex__aic">
+          <h2>
+            Get early access today
+          </h2>
+          <p>
+            It only takes a minute to sign up and our free starter tire is extermely generous. if you have any
+            <br />questions, our support team would be happy to help you.
+          </p>
+          <div class="cta__outer">
+            <div class="input__outer">
+              <input placeholder="your email" />
+            </div>
+            <div class="input__cta">
+              <button class="cta__btn flex flex__aic flex__jcc">
+                Get started
+                <img src="./assets/svg/plane.svg" />
+              </button>
+            </div>
+          </div>
+        </div>
 
+        <!-- footer content containor -->
+        <div class="footer__content__Containor">
+          <div class="grid__item footer__location flex flex__fdc flex__aifs flex__jcfs">
+            <img id="footer__logo" src="./assets/svg/logo.svg" />
+            <span class="flex flex__aifs">
+              <img id="mini__icon" src="./assets/svg/location.svg" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officiis nisi sequi quaerat
+                magnam nostrum.
+              </p>
+            </span>
+          </div>
+          <div class="grid__item footer__contact">
+            <span class="flex flex__aic">
+              <img id="mini__icon" src="./assets/svg/email.svg" />
+              <a href="mailto:sahiljoshi.personal@gmail.com">
+                <p>
+                  suport@fylo.com
+                </p>
+              </a>
+
+            </span>
+            <span class="flex flex__aifs">
+              <img id="mini__icon" src="./assets/svg/phone.svg" />
+              <a href="tel:+917852099185">
+                <p>
+                  +91-7852099185
+                </p>
+              </a>
+            </span>
+          </div>
+          <div class="grid__item flex  footer__links">
+            <ul>
+              <li>About</li>
+              <li>Press</li>
+              <li>Jobs</li>
+              <li>Blog</li>
+            </ul>
+            <ul>
+              <li>Contact Us</li>
+              <li>Terms</li>
+              <li>Privacy</li>
+
+            </ul>
+          </div>
+          <div class="grid__item footer__socialMedia">
+            <ul>
+              <li class="flex flex__aic">
+                <img src="./assets/svg/PinterestLogo.svg" />
+                <p>
+                  pintrest
+                </p>
+              </li>
+              <li class="flex flex__aic">
+                <img src="./assets/svg/GithubLogo.svg" />
+                <p>
+                  github
+                </p>
+              </li>
+              <li class="flex flex__aic">
+                <img src="./assets/svg/TwitterLogo.svg" />
+                <p>
+                  twitter
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer [END] -->
   </section>
-  
-
- 
-  <!-- footer (absolute ctaBox) -->
   <!-- custom javascript -->
   <script src="./scripts/main.js" defer></script>
-
-
 </body>
 
 </html>

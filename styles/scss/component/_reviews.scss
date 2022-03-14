@@ -1,0 +1,99 @@
+.reviews_section {
+    width: 100%;
+    height: 100%;
+    margin-top: 80px;
+    margin-bottom: 200px;
+    padding:20px;
+
+    .inner_content {
+        max-width: 1000px;
+        width: 100%;
+        margin: auto;
+        height: 100%;
+        position: relative;
+     
+        display: grid;
+        row-gap: 10px;
+        column-gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 60px 10px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 12px;
+            top: 10px;
+            width: 100%;
+            max-width: 80px;
+            max-height: 80px;
+            height: 100%;
+            background-image: url("../../../assets/img/bg-quotes.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .reivew__outer {
+            background-color: $dark-testimonials-bg;
+            z-index: 2;
+            border-radius: 4px;
+            padding: 35px 20px;
+
+            .review__txt {
+                font-family: $ff-primary;
+                font-weight: $fw-regular;
+                color: $grey-text;
+                font-size: 15px;
+                text-align: left;
+                margin-bottom: 25px;
+                line-height: 1;
+            }
+
+            .review__meta {
+                .avatar__outer {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    border: 1px solid $cyan-inside-cta-gradient;
+                    position: relative;
+                    overflow: hidden;
+
+                    img {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+                span {
+                    margin-left: 7px;
+
+                    .reviewer__name {
+                        font-family: $ff-other;
+                        font-weight: 700;
+                        color: white;
+                        font-size: 15px;
+                        text-align: left;
+                        text-transform: capitalize;
+                        line-height: 1.4;
+                    }
+
+                    .reviewer__subinfo {
+                        font-family: $ff-other;
+                        font-weight: 400;
+                        color: #969ea6;
+                        font-size: 12px;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+
+        @include breakpoint-down("meadium") {
+            row-gap: 20px;
+            column-gap: 0px;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        }
+    }
+}
