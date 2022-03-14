@@ -2,21 +2,23 @@
 // ========================## Colors=======================================
 // ### Primary
 $dark-blue-intro-and-email-signup-bg: hsl(217, 28%, 15%);
-$dark-blue-main-bg: hsl(218, 28%, 13%);
+$dark-blue-main-bg: #181f2a;
 $dark-blue-footer-bg: hsl(216, 53%, 9%);
-$dark--testimonials-bg: hsl(219, 30%, 18%);
+$dark-testimonials-bg: hsl(219, 30%, 18%);
+$grey-text : hsl(212, 8%, 62%);
+$hover-txt : #09D1E3;
 
 // ### Accent
-$cyan-inside-cta-gradient: hsl(176, 68%, 64%);
+$cyan-inside-cta-gradient: #66e3db;
 $blue-inside-cta-gradient: hsl(198, 60%, 50%);
 $light-red-err : hsl(0, 100%, 63%);
 
 
 // ### Neutral
-$White : hsl(0, 0%, 100%);
+$white : hsl(0, 0%, 100%);
 // ========================## Colors=========================================
 // ========================## Font Family and weight=========================
-$ff-primary : 'Open Sans', sans-serif;
+$ff-primary : "Fredoka", sans-serif;
 $ff-secondary : 'Raleway', sans-serif;
 $fw-regular : 400;
 $fw-bold : 700;
@@ -27,3 +29,49 @@ $general-fontsize : 14px;
 
 
 // variables================================================================END
+
+
+
+
+// helper classes
+.flex{
+    display:flex;
+    
+    &__aic{
+        align-items: center;
+    }
+
+    &__jcc{
+        justify-content: center;
+    }
+
+    &__acc{
+        align-content: center;
+    }
+
+
+    &__jcsb{
+        justify-content: space-between;
+    }
+
+    &__fdc{
+        flex-direction: column;
+    }
+
+    &__fdr{
+        flex-direction: row;
+    }
+
+
+    &__as{
+        align-self: center;
+    }
+
+    &__js{
+        justify-self: center;
+    }
+
+    &__jcfe{
+        justify-content: flex-end;
+    }
+}

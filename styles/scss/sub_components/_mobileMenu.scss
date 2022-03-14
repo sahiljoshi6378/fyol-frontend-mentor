@@ -1,0 +1,92 @@
+// mobile menu containor
+.mobile__menu__backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+
+    .mobileMenu {
+        width: calc(65%);
+        height: 100%;
+        position: fixed;
+        right: -100%;
+        top: 0;
+        background-color: $dark-blue-main-bg;
+        animation: slidein 300ms both ease-in-out;
+        z-index: 1000;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+        // navigation list
+        ul {
+            display :flex;
+            flex-direction: column;
+            // background-color: red;
+            padding: 50px 30px 30px 30px;
+            li {
+
+                font-size:  20px;
+                img {
+                    width: 28px;
+                }
+                a {
+                    text-transform: capitalize;
+                    color: $grey-text;
+                    text-decoration: none;
+                    transition: all 200ms ease;
+                    font-weight: $fw-regular;
+                    margin-left: 12px;
+                }
+
+                // navigation hover
+                &:hover {
+                    a {
+                        color: $hover-txt;
+                    }
+
+                    img {
+                        filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
+                    }
+
+                    img[data-hover="features"] {
+                        content: url("../../../assets/svg/features-hover.svg");
+                    }
+
+                    img[data-hover="team"] {
+                        content: url("../../../assets/svg/team-hover.svg");
+                    }
+
+                    img[data-hover="login"] {
+                        content: url("../../../assets/svg/login-hover.svg");
+                    }
+
+                }
+
+                
+                &:not(:first-child) {
+                    margin-top: 56px;
+                }
+
+                
+            }
+        }
+
+        .slidein {
+            @keyframes slidein {
+                0% {
+                    right: -100%;
+                }
+                100% {
+                    right: 0;
+                }
+            }
+        }
+    }
+}
+
+.lock {
+    height: 100vh;
+    overflow: hidden;
+}

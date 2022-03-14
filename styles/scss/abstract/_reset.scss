@@ -37,12 +37,15 @@ footer, header, hgroup, menu, nav, section {
 
 html{
 	font-size: 14px;
-	font-family: 'Open Sans', sans-serif;
+	scroll-behavior: smooth;
+	font-family: 'Raleway', sans-serif;
 }
 
 
 body {
 	line-height: 1;
+	
+	
 }
 ol, ul {
 	list-style: none;
@@ -59,3 +62,23 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* width */
+::-webkit-scrollbar {
+	width: 3px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: hsl(216, 20%, 20%);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: hsl(198, 60%, 50%);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: hsl(176, 68%, 64%);
+  }

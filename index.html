@@ -22,13 +22,144 @@
 </head>
 
 <body>
+  <!-- hero section (header,main-content,grid) -->
+  <section class="section__hero flex flex__fdc flex__jcc flex__aic">
+    <!-- header -->
+    <header class="header">
+      <div class="flex flex__aic flex__jcsb inner_div">
+        
+        <a href="/" class="logo-herf">
+          <img id="logo" src="./assets/svg/logo.svg" />
+        </a>
 
-  <p>hello world</p>
+        <!-- header navigation -->
+        <ul class="flex">
+          <li class="flex flex__aic">
+            <img data-hover="features" data-hover-url="./assets/svg/features-hover.svg"
+              src="./assets/svg/features.svg" />
+            <a href="#features">
+              features
+            </a>
+          </li>
+          <li class="flex flex__aic">
+            <img data-hover="team" data-hover-url="./assets/svg/team-hover.svg" src="./assets/svg/team.svg" />
+            <a href="#">
+              team
+            </a>
+          </li>
+          <li class="flex flex__aic">
+            <img data-hover="login" data-hover-url="./assets/svg/login-hover.svg" src="./assets/svg/login.svg" />
+            <a href="#">
+              sign in
+            </a>
+          </li>
+        </ul>
+
+        <div id="hammenu" class="hammenu flex__fdc flex__jcsb">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+      </div>
+
+    </header>
+    <!-- hero section content -->
+    <div class="section__hero__content flex flex__fdc flex__aic flex__jcc">
+      <img src="./assets/img/illustration-intro.png" />
+
+      <h2 class="heading">
+        All your files in one secure location,<br />
+        accessable anywhere.
+      </h2>
+      <p>
+        Fylo stores all your most important files in one secure location.<br>
+        Access them whenever you need, share and collaborate with<br /> friends family, and co-workers.
+      </p>
+      <button id="banner__cta">
+        get started
+      </button>
+    </div>
+
+    <!-- grid containor -->
+    <div id="features" class="grid__containor">
+      <div class="grid__item flex flex__fdc flex__jcc flex__aic active">
+        <img src="./assets/svg/icon-access-anywhere.svg" />
+        <h2>Access your files, anywhere</h2>
+        <p>
+          The ability to use a smartphone,tablet, or computer to access your account means your files follow you
+          everywhere.
+        </p>
+      </div>
+      <div class="grid__item flex flex__fdc flex__jcc flex__aic">
+        <img src="./assets/svg/icon-security.svg" />
+        <h2>Security you can trust</h2>
+        <p>
+          2-factor authentication and user-controlled encryption are just couple of th esecurity features we allow to
+          help secure your files.
+        </p>
+      </div>
+      <div class="grid__item flex flex__fdc flex__jcc flex__aic">
+
+        <img src="./assets/svg/icon-collaboration.svg" />
+        <h2>Real-time collaboration</h2>
+        <p>
+          securely share files and folders with friends, family and colleagues for live collaboration. No email
+          attchments required.
+        </p>
+      </div>
+      <div class="grid__item flex flex__fdc flex__jcc flex__aic">
+        <img src="./assets/svg/icon-any-file.svg" />
+        <h2>Store any type of file</h2>
+        <p>
+          wherther you-re sharing holidays photos or work documents, Fylo has you covered allowing for all file types to
+          be securely stored and shared.
+        </p>
+      </div>
+    </div>
+
+    <!-- flex img plus content -->
+    <section class="stay_productive_section ">
+      <div class="inner_content flex">
+        <img 
+        src="./assets/svg/productive.svg"
+         />
+        <div class="content">
+          <h2>Stay productive,<br/> whereever you are</h2>
+          <p>
+            Never let location be an issue when accessing your files. Fylo has you covered for all your file storage needs.
+          </p>
+          <p>
+            Securely share files and folders with friends, family and colleagues for live collaboration, Noemail attchments required.
+          </p>
+          <a class="flex flex__aic" href="#">
+            See how fylo works
+            <img
+            src="./assets/svg/icon-arrow.svg"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
 
 
+      <!-- reviews -->
+     <section class="reviews_section ">
+      <div class="inner_content flex">
+       
+        </div>
+      </div>
+    </section>
 
+  </section>
+  
+
+ 
+  <!-- footer (absolute ctaBox) -->
   <!-- custom javascript -->
   <script src="./scripts/main.js" defer></script>
+
+
 </body>
 
 </html>
